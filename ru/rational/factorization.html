@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Факторизация | Ариадна</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css">
+    <meta name="description" content="Лучшие учебные материалы в одном месте">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/ariadna/assets/css/0.styles.ba6ece44.css" as="style"><link rel="preload" href="/ariadna/assets/js/app.9bf65442.js" as="script"><link rel="preload" href="/ariadna/assets/js/3.952d921c.js" as="script"><link rel="preload" href="/ariadna/assets/js/85.2394a324.js" as="script"><link rel="prefetch" href="/ariadna/assets/js/10.9eb481e6.js"><link rel="prefetch" href="/ariadna/assets/js/100.386cf49f.js"><link rel="prefetch" href="/ariadna/assets/js/101.10c723d6.js"><link rel="prefetch" href="/ariadna/assets/js/102.5b723e43.js"><link rel="prefetch" href="/ariadna/assets/js/103.6ebafa67.js"><link rel="prefetch" href="/ariadna/assets/js/104.7a97f020.js"><link rel="prefetch" href="/ariadna/assets/js/11.0437fa6b.js"><link rel="prefetch" href="/ariadna/assets/js/12.892e91e8.js"><link rel="prefetch" href="/ariadna/assets/js/13.e8797a17.js"><link rel="prefetch" href="/ariadna/assets/js/14.dc38463b.js"><link rel="prefetch" href="/ariadna/assets/js/15.a16fad42.js"><link rel="prefetch" href="/ariadna/assets/js/16.fce77f09.js"><link rel="prefetch" href="/ariadna/assets/js/17.6a6f582e.js"><link rel="prefetch" href="/ariadna/assets/js/18.e21e9fab.js"><link rel="prefetch" href="/ariadna/assets/js/19.3a39b3a4.js"><link rel="prefetch" href="/ariadna/assets/js/20.b8f39700.js"><link rel="prefetch" href="/ariadna/assets/js/21.fef1c8b0.js"><link rel="prefetch" href="/ariadna/assets/js/22.0597773c.js"><link rel="prefetch" href="/ariadna/assets/js/23.d62feb68.js"><link rel="prefetch" href="/ariadna/assets/js/24.437f5606.js"><link rel="prefetch" href="/ariadna/assets/js/25.967a755a.js"><link rel="prefetch" href="/ariadna/assets/js/26.e3c78dc2.js"><link rel="prefetch" href="/ariadna/assets/js/27.b307dc8d.js"><link rel="prefetch" href="/ariadna/assets/js/28.65b81a0d.js"><link rel="prefetch" href="/ariadna/assets/js/29.08de7f14.js"><link rel="prefetch" href="/ariadna/assets/js/30.1d39a9f4.js"><link rel="prefetch" href="/ariadna/assets/js/31.0dc32316.js"><link rel="prefetch" href="/ariadna/assets/js/32.cf265653.js"><link rel="prefetch" href="/ariadna/assets/js/33.70a4aabc.js"><link rel="prefetch" href="/ariadna/assets/js/34.a9879318.js"><link rel="prefetch" href="/ariadna/assets/js/35.eb2f5126.js"><link rel="prefetch" href="/ariadna/assets/js/36.6fb75556.js"><link rel="prefetch" href="/ariadna/assets/js/37.4bf467d4.js"><link rel="prefetch" href="/ariadna/assets/js/38.5ed69ee3.js"><link rel="prefetch" href="/ariadna/assets/js/39.397223f6.js"><link rel="prefetch" href="/ariadna/assets/js/4.16ca7b6d.js"><link rel="prefetch" href="/ariadna/assets/js/40.943b635d.js"><link rel="prefetch" href="/ariadna/assets/js/41.c590802e.js"><link rel="prefetch" href="/ariadna/assets/js/42.e9675ddc.js"><link rel="prefetch" href="/ariadna/assets/js/43.74868431.js"><link rel="prefetch" href="/ariadna/assets/js/44.ccb636bd.js"><link rel="prefetch" href="/ariadna/assets/js/45.c0c6b274.js"><link rel="prefetch" href="/ariadna/assets/js/46.ae2ee267.js"><link rel="prefetch" href="/ariadna/assets/js/47.1c780dc6.js"><link rel="prefetch" href="/ariadna/assets/js/48.a8cf75f8.js"><link rel="prefetch" href="/ariadna/assets/js/49.b7efdbfb.js"><link rel="prefetch" href="/ariadna/assets/js/5.90c8f605.js"><link rel="prefetch" href="/ariadna/assets/js/50.44da709b.js"><link rel="prefetch" href="/ariadna/assets/js/51.d825c617.js"><link rel="prefetch" href="/ariadna/assets/js/52.a652a092.js"><link rel="prefetch" href="/ariadna/assets/js/53.4899f392.js"><link rel="prefetch" href="/ariadna/assets/js/54.33be5b34.js"><link rel="prefetch" href="/ariadna/assets/js/55.640d87c0.js"><link rel="prefetch" href="/ariadna/assets/js/56.86b1eb4f.js"><link rel="prefetch" href="/ariadna/assets/js/57.53ab2300.js"><link rel="prefetch" href="/ariadna/assets/js/58.efe43291.js"><link rel="prefetch" href="/ariadna/assets/js/59.943ce323.js"><link rel="prefetch" href="/ariadna/assets/js/6.b451b3d6.js"><link rel="prefetch" href="/ariadna/assets/js/60.1abddedb.js"><link rel="prefetch" href="/ariadna/assets/js/61.34f7fb6a.js"><link rel="prefetch" href="/ariadna/assets/js/62.fc2594e1.js"><link rel="prefetch" href="/ariadna/assets/js/63.a5bbfb3a.js"><link rel="prefetch" href="/ariadna/assets/js/64.d73ffc11.js"><link rel="prefetch" href="/ariadna/assets/js/65.ee1da7ad.js"><link rel="prefetch" href="/ariadna/assets/js/66.50c7fe65.js"><link rel="prefetch" href="/ariadna/assets/js/67.5cd8d7f6.js"><link rel="prefetch" href="/ariadna/assets/js/68.8abf591a.js"><link rel="prefetch" href="/ariadna/assets/js/69.23eada03.js"><link rel="prefetch" href="/ariadna/assets/js/7.b411c964.js"><link rel="prefetch" href="/ariadna/assets/js/70.f9e116f3.js"><link rel="prefetch" href="/ariadna/assets/js/71.ec2e4c1d.js"><link rel="prefetch" href="/ariadna/assets/js/72.213a88d1.js"><link rel="prefetch" href="/ariadna/assets/js/73.b643e52f.js"><link rel="prefetch" href="/ariadna/assets/js/74.aa0cfaf1.js"><link rel="prefetch" href="/ariadna/assets/js/75.04274743.js"><link rel="prefetch" href="/ariadna/assets/js/76.d15f7c4d.js"><link rel="prefetch" href="/ariadna/assets/js/77.a69ba869.js"><link rel="prefetch" href="/ariadna/assets/js/78.1bdac4a1.js"><link rel="prefetch" href="/ariadna/assets/js/79.81067475.js"><link rel="prefetch" href="/ariadna/assets/js/8.57ad6295.js"><link rel="prefetch" href="/ariadna/assets/js/80.8ec89aa2.js"><link rel="prefetch" href="/ariadna/assets/js/81.9645bfea.js"><link rel="prefetch" href="/ariadna/assets/js/82.a219fa76.js"><link rel="prefetch" href="/ariadna/assets/js/83.eb79aa34.js"><link rel="prefetch" href="/ariadna/assets/js/84.5dd04815.js"><link rel="prefetch" href="/ariadna/assets/js/86.04c9b7fe.js"><link rel="prefetch" href="/ariadna/assets/js/87.a9194424.js"><link rel="prefetch" href="/ariadna/assets/js/88.0d8a8400.js"><link rel="prefetch" href="/ariadna/assets/js/89.067a3d26.js"><link rel="prefetch" href="/ariadna/assets/js/9.c3db1a87.js"><link rel="prefetch" href="/ariadna/assets/js/90.de960560.js"><link rel="prefetch" href="/ariadna/assets/js/91.41a3f829.js"><link rel="prefetch" href="/ariadna/assets/js/92.6eb68762.js"><link rel="prefetch" href="/ariadna/assets/js/93.d621bc3c.js"><link rel="prefetch" href="/ariadna/assets/js/94.4a00fc4e.js"><link rel="prefetch" href="/ariadna/assets/js/95.809f16e2.js"><link rel="prefetch" href="/ariadna/assets/js/96.7e88660c.js"><link rel="prefetch" href="/ariadna/assets/js/97.333814c6.js"><link rel="prefetch" href="/ariadna/assets/js/98.ebfe5389.js"><link rel="prefetch" href="/ariadna/assets/js/99.886f0d05.js"><link rel="prefetch" href="/ariadna/assets/js/vendors~docsearch.8e8500d6.js">
+    <link rel="stylesheet" href="/ariadna/assets/css/0.styles.ba6ece44.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ariadna/" class="home-link router-link-active"><!----> <span class="site-name">Ариадна</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ariadna/ru/handbooks/" class="nav-link">
+  Справочники
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Языки</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Языки</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ariadna/ru/rational/factorization.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  🇷🇺 Русский
+</a></li><li class="dropdown-item"><!----> <a href="/ariadna/en/" class="nav-link">
+  🇺🇸 English
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/ariadna/ru/handbooks/" class="nav-link">
+  Справочники
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Языки</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Языки</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ariadna/ru/rational/factorization.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  🇷🇺 Русский
+</a></li><li class="dropdown-item"><!----> <a href="/ariadna/en/" class="nav-link">
+  🇺🇸 English
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>О проекте</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Основы</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>От пальцев к числам</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Части целого</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ariadna/ru/rational/" aria-current="page" class="sidebar-link">Вступление</a></li><li><a href="/ariadna/ru/rational/multiplication.html" class="sidebar-link">Умножение</a></li><li><a href="/ariadna/ru/rational/division.html" class="sidebar-link">Деление</a></li><li><a href="/ariadna/ru/rational/divisibility.html" class="sidebar-link">Признаки делимости</a></li><li><a href="/ariadna/ru/rational/factorization.html" aria-current="page" class="active sidebar-link">Факторизация</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ariadna/ru/rational/factorization.html#бод" class="sidebar-link">БОД</a></li><li class="sidebar-sub-header"><a href="/ariadna/ru/rational/factorization.html#алгоритм-евклида" class="sidebar-link">Алгоритм Евклида</a></li><li class="sidebar-sub-header"><a href="/ariadna/ru/rational/factorization.html#мок" class="sidebar-link">МОК</a></li></ul></li><li><a href="/ariadna/ru/rational/decimals.html" class="sidebar-link">Десятичные дроби</a></li><li><a href="/ariadna/ru/rational/percentages.html" class="sidebar-link">Проценты</a></li><li><a href="/ariadna/ru/rational/equalities.html" class="sidebar-link">Равенства</a></li><li><a href="/ariadna/ru/rational/rounding.html" class="sidebar-link">Округление</a></li><li><a href="/ariadna/ru/rational/time.html" class="sidebar-link">Время</a></li><li><a href="/ariadna/ru/rational/combinatorics.html" class="sidebar-link">Комбинаторика</a></li><li><a href="/ariadna/ru/rational/probability.html" class="sidebar-link">Вероятность</a></li><li><a href="/ariadna/ru/rational/averages.html" class="sidebar-link">Средние значения</a></li><li><a href="/ariadna/ru/rational/_rational.html" class="sidebar-link">В разработке</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Неправильные числа</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Буквы вместо чисел</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Взаимосвязи</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Анализ</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Невозможные числа</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="факторизация"><a href="#факторизация" class="header-anchor">#</a> Факторизация</h1> <p>https://cindyjs.org/gallery/main/EuclidsAlgorithm/</p> <div class="block todo"><div class="title">Добавить </div><p>Химические уравнения и насколько это пойдет в плюс</p></div><p>Всё множество натуральных чисел можно поделить на две категории - простые и составные.</p> <p><em>Простое</em> число - число, которое делится целым образом только на себя и на единицу. Ряд простых чисел начинается таким образом: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 и т.д. Число 2 – наименьшее и единственное чётное простое число. Остальные простые числа – нечётные. Также как и в случае с натуральными числами, не существует наибольшего простого числа.</p> <p>Все остальные натуральные числа называются <em>составными</em>. Любое составное число можно единственным образом представить в виде произведения простых чисел.</p> <p>Например, 12 - составное число. Из таблицы умножения известно, что $$12=3*4$$</p> <p>В свою очередь, 4 можно представить как произведение 2 на 2. Тогда</p> <p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>12</mn><mo>=</mo><mn>3</mn><mo>∗</mo><mn>2</mn><mo>∗</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">12=3*2*2
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span></span></p> <p><em>Факторизация</em> (от англ. factor - множитель) - это то, что мы только что сделали с числом 12 - разложили его на простые множители. Делать это удобно с помощью вертикальной черты.</p> <p>Покажем на примере числа 18. Слева мы будем записывать результат деления, справа - число, на которое делим</p> <p title="ParseError: KaTeX parse error: No such environment: center at position 7: \begin{̲c̲e̲n̲t̲e̲r̲}̲
+\begin{tabular…" class="katex-block katex-error">\begin{center}
+\begin{tabular}{r|l}
+{\color{blue}\text{исходное число}\to18} &amp;
+{\color{purple}_2}\gets_\\
+{\color{brown}18:2\to9} &amp;
+{\color{purple}_3}\gets\text{делители}_\\
+3 &amp; {\color{purple}3\gets}\\
+1 \\
+\end{tabular}
+\end{center}
+</p> <p>В результате разложения слева мы должны получить единицу. Умножив все числа справа, мы получим первоначальное число</p> <p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>2</mn><mo>∗</mo><mn>3</mn><mo>∗</mo><mn>3</mn><mo>=</mo><mn>18</mn></mrow><annotation encoding="application/x-tex">2*3*3=18
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">8</span></span></span></span></span></p> <p>Главное условие - использовать справа только простые числа.</p> <p>Факторизация пригодится нам для работы с обыкновенными дробями, но об этом чуть позже.</p> <p>Разложить на множители числа: 15, 16, 42, 23, 60, 210, 45, 27, 85, 56.</p> <h2 id="бод"><a href="#бод" class="header-anchor">#</a> БОД</h2> <p>Числа, на которые число делится нацело (то есть без остатка) называются <em>делителями</em> числа. Например, делителями числа 12 являются</p> <p title="ParseError: KaTeX parse error: Undefined control sequence: \divisors at position 1: \̲d̲i̲v̲i̲s̲o̲r̲s̲(12)=\{1, 2, 3,…" class="katex-block katex-error">\divisors(12)=\{1, 2, 3, 4, 6, 12\}
+</p> <p><em>Больший общий делитель (БОД)</em> двух чисел a и b - это наибольшее число, на которое оба числа a и b делятся без остатка.</p> <p title="ParseError: KaTeX parse error: Undefined control sequence: \gcf at position 1: \̲g̲c̲f̲(a, b)=\gcf(a, …" class="katex-block katex-error">\gcf(a, b)=\gcf(a, b)
+</p> <p>В литературе обычно используется запись НОД (наибольший общий делитель). Чтобы в голове не было путаницы между НОД и НОК (наименьшим общим кратным, о котором мы поговорим позже), мы будем использовать запись БОД и МОК.</p> <p>БОД можно искать не только для двух чисел. Для этого удобно пользоваться разложением на множители. Для примера найдем <span title="ParseError: KaTeX parse error: Undefined control sequence: \gcf at position 1: \̲g̲c̲f̲(12, 18)" class="katex-error">\gcf(12, 18)</span> - факторизацию для них мы уже сделали. Следующий шаг - выделим в обоих разложениях пары одинаковых чисел</p> <p title="ParseError: KaTeX parse error: No such environment: center at position 7: \begin{̲c̲e̲n̲t̲e̲r̲}̲
+\begin{tabular…" class="katex-block katex-error">\begin{center}
+\begin{tabular}[t]{ccccc}
+\begin{tabular}[t]{r|l}
+12 &amp; \boxed{2}\\
+6 &amp; 2\\
+3 &amp; \boxed{3}\\
+1 &amp; \\
+\end{tabular} &amp; &amp;
+\begin{tabular}[t]{r|l}
+18 &amp; \boxed{2}\\
+9 &amp; \boxed{3}\\
+3 &amp; 3\\
+1 &amp; \\
+\end{tabular} \\
+\\
+12=2*2*3 &amp; &amp;
+18=2*3*3\\
+\end{tabular}
+\end{center}
+</p> <p>Тогда <span title="ParseError: KaTeX parse error: Undefined control sequence: \gcf at position 1: \̲g̲c̲f̲(12, 18)" class="katex-error">\gcf(12, 18)</span> будет равен произведению</p> <p title="ParseError: KaTeX parse error: Undefined control sequence: \gcf at position 1: \̲g̲c̲f̲(12, 18)=2\*3=6…" class="katex-block katex-error">\gcf(12, 18)=2\*3=6
+</p> <p>Как видно, мы не умножили все выделенные числа, а взяли только по одному числу из каждой пары.</p> <p>В качестве следующего примера найдем <span title="ParseError: KaTeX parse error: Undefined control sequence: \gcf at position 1: \̲g̲c̲f̲(15, 30)" class="katex-error">\gcf(15, 30)</span></p> <p title="ParseError: KaTeX parse error: No such environment: center at position 7: \begin{̲c̲e̲n̲t̲e̲r̲}̲
+\begin{tabular…" class="katex-block katex-error">\begin{center}
+\begin{tabular}[t]{ccccc}
+\begin{tabular}[t]{r|l}
+15 &amp; \boxed{5}\\
+3 &amp; \boxed{3}\\
+1 &amp; \\
+\end{tabular} &amp; &amp;
+\begin{tabular}[t]{r|l}
+30 &amp; \boxed{3}\\
+10 &amp; 2\\
+5 &amp; \boxed{5}\\
+1 &amp; \\
+\end{tabular} \\
+\\
+15=5*3 &amp; &amp;
+30=3*2\*5\\
+\end{tabular}
+\end{center}
+</p> <p>Число 15 полностью вошло в разложение для 30. Очевидно, ведь <span title="ParseError: KaTeX parse error: Undefined control sequence: \* at position 6: 30=15\̲*̲2" class="katex-error">30=15\*2</span>. Тогда</p> <p title="ParseError: KaTeX parse error: Undefined control sequence: \gcf at position 1: \̲g̲c̲f̲(15, 30)=15
+" class="katex-block katex-error">\gcf(15, 30)=15
+</p> <p>Еще пример. Вычислим БОД для 14 и 9</p> <p title="ParseError: KaTeX parse error: No such environment: center at position 7: \begin{̲c̲e̲n̲t̲e̲r̲}̲
+\begin{tabular…" class="katex-block katex-error">\begin{center}
+\begin{tabular}[t]{ccccc}
+\begin{tabular}[t]{r|l}
+14 &amp; 7\\
+2 &amp; 2\\
+1 &amp; \\
+\end{tabular} &amp; &amp;
+\begin{tabular}[t]{r|l}
+9 &amp; 3\\
+3 &amp; 3\\
+1 &amp; \\
+\end{tabular} \\
+\end{tabular}
+\end{center}
+</p> <p>Числа 14 и 9 имеют только один общий делитель - число 1. Такие натуральные числа называют <em>взаимно простыми</em>.</p> <h2 id="алгоритм-евклида"><a href="#алгоритм-евклида" class="header-anchor">#</a> Алгоритм Евклида</h2> <p>\gcf(64, 32)=
+\gcf(11, 44)=
+\gcf(32, 56)=
+\gcf(54, 36)=
+\gcf(256, 128)=</p> <h2 id="мок"><a href="#мок" class="header-anchor">#</a> МОК</h2> <p><em>Кратное</em> числа a - это число, которое делится на число a без остатка. Числа, кратные 4 (эти числа делятся на 4 без остатка): 4, 8, 12, 16 и т.д.</p> <p title="ParseError: KaTeX parse error: Undefined control sequence: \multiples at position 1: \̲m̲u̲l̲t̲i̲p̲l̲e̲s̲(4)=\{4, 8, 12,…" class="katex-block katex-error">\multiples(4)=\{4, 8, 12, 16, \ld\}
+</p> <p>Таблица умножения почти полностью состоит из кратных чисел. У любого числа количество кратных бесконечно, в отличие от количества делителей</p> <p title="ParseError: KaTeX parse error: Undefined control sequence: \mbox at position 23: …race{1, 2, 4}_{\̲m̲b̲o̲x̲{делители}}\qqu…" class="katex-block katex-error">\underbrace{1, 2, 4}_{\mbox{делители}}\qquad\underbrace{4, 8, 12, \ld, 40, 44, 48, \ld}_{\mbox{кратные}}
+</p> <p><em>Меньшим общим кратным (МОК)</em> двух и более натуральных чисел называется наименьшее натуральное число, которое делится нацело каждым из этих чисел.</p> <p>Рассмотрим алгоритм нахождения меньшего общего кратного на примере <span title="ParseError: KaTeX parse error: Undefined control sequence: \lcm at position 1: \̲l̲c̲m̲(12, 18)" class="katex-error">\lcm(12, 18)</span>:</p> <ol><li>Найти БОД указанных чисел - этот пункт у нас уже выполнен. Но теперь мы выделим в разложении меньших чисел множители, которые не вошли в разложение бо́льшего числа, то есть числа 18. В нашем примере в 18 отсутствует 2 из числа 12</li></ol> <p title="ParseError: KaTeX parse error: No such environment: center at position 7: \begin{̲c̲e̲n̲t̲e̲r̲}̲
+\begin{tabular…" class="katex-block katex-error">\begin{center}
+\begin{tabular}[t]{ccccc}
+\begin{tabular}[t]{r|l}
+12 &amp; \boxed{2}\\
+6 &amp; _2_\\
+3 &amp; \boxed{3}\\
+1 &amp; \\
+\end{tabular} &amp; &amp;
+\begin{tabular}[t]{r|l}
+18 &amp; \boxed{2}\\
+9 &amp; \boxed{3}\\
+3 &amp; 3\\
+1 &amp; \\
+\end{tabular} \\
+\\
+12=2**2**3 &amp; &amp;
+18=2*3*3\\
+\end{tabular}
+\end{center}
+</p> <ol start="0"><li>Добавим недостающие множители в разложение бо́льшего числа и запишем ответ</li></ol> <p title="ParseError: KaTeX parse error: Undefined control sequence: \lcm at position 1: \̲l̲c̲m̲(12, 18)=2*3*3\…" class="katex-block katex-error">\lcm(12, 18)=2*3*3\*_2}=18_\textbf{2\*=36
+</p> <p>Еще пример. Найдём <span title="ParseError: KaTeX parse error: Undefined control sequence: \lcm at position 1: \̲l̲c̲m̲(12, 16, 24)" class="katex-error">\lcm(12, 16, 24)</span></p> <p title="ParseError: KaTeX parse error: No such environment: center at position 7: \begin{̲c̲e̲n̲t̲e̲r̲}̲
+\begin{tabular…" class="katex-block katex-error">\begin{center}
+\begin{tabular}[t]{ccccc}
+\begin{tabular}[t]{r|l}
+12 &amp; 2\\
+6 &amp; 2\\
+3 &amp; 3\\
+1 &amp; \\
+\end{tabular} &amp; &amp;
+\begin{tabular}[t]{r|l}
+16 &amp; 2\\
+8 &amp; 2\\
+4 &amp; 2\\
+2 &amp; _2_\\
+1 &amp; \\
+\end{tabular} &amp; &amp;
+\begin{tabular}[t]{r|l}
+24 &amp; 2\\
+12 &amp; 2\\
+6 &amp; 2\\
+3 &amp; 3\\
+1 &amp;\\
+\end{tabular} \\
+\\
+12=2*2*3 &amp; &amp;
+16=2*2*2\*_2_ &amp; &amp;
+24=2*2*2\*3\\
+\end{tabular}
+\end{center}
+</p> <p>Как видно из разложения чисел, все множители 12 вошли в разложение 24 (самого бо́льшего из чисел). Три двойки в 24 есть, поэтому в МОК добавляем только одну <em>2</em> из разложения числа 16.</p> <p title="ParseError: KaTeX parse error: Undefined control sequence: \lcm at position 1: \̲l̲c̲m̲(12, 16, 24)=24…" class="katex-block katex-error">\lcm(12, 16, 24)=24\*_2_=48
+</p> <p>Так как взаимно простые числа не имеют общих простых делителей, то их наименьшее общее кратное равно произведению этих чисел. Например, <span title="ParseError: KaTeX parse error: Undefined control sequence: \lcm at position 1: \̲l̲c̲m̲(13, 4)" class="katex-error">\lcm(13, 4)</span>.</p> <p>\lcm(1, 2)=
+\lcm(9, 12)=
+\lcm(16, 48)=
+\lcm(4, 5, 6)=
+\lcm(12, 60, 15)=</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ariadna/ru/rational/divisibility.html" class="prev">
+        Признаки делимости
+      </a></span> <span class="next"><a href="/ariadna/ru/rational/decimals.html">
+        Десятичные дроби
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/ariadna/assets/js/app.9bf65442.js" defer></script><script src="/ariadna/assets/js/3.952d921c.js" defer></script><script src="/ariadna/assets/js/85.2394a324.js" defer></script>
+  </body>
+</html>
