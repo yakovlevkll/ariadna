@@ -14,10 +14,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.3",
+    "@vuepress/types": "^1.9.7",
+    "vuepress": "^1.9.2",
     "vuepress-plugin-container": "^2.1.5"
   },
   "dependencies": {
+    "@iktakahiro/markdown-it-katex": "^4.0.1",
     "mermaid": "^9.1.1"
   }
 }
