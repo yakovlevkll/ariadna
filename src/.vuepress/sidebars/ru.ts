@@ -1,4 +1,4 @@
-{
+export default {
   "/ru/handbooks/": [
     {
       "title": "Общее",
@@ -78,10 +78,10 @@
         ["/ru/rational/", "Вступление"],
         "/ru/rational/multiplication",
         "/ru/rational/division",
-        "/ru/rational/bodmas",
+        // "/ru/rational/bodmas",
         "/ru/rational/divisibility",
         "/ru/rational/factorization",
-        "/ru/rational/fractions",
+        // "/ru/rational/fractions",
         "/ru/rational/decimals",
         "/ru/rational/percentages",
         "/ru/rational/equalities",
@@ -123,12 +123,12 @@
     {
       "title": "Анализ",
       "children": [
-        ["/ru/analysis/", "Вступление"],
-        "/ru/analysis/limits/",
-        "/ru/analysis/differentiation/",
-        "/ru/analysis/differentiation/extremes",
-        "/ru/analysis/integration/",
-        "/ru/analysis/integration/parts"
+        ["/ru/calculus/", "Вступление"],
+        "/ru/calculus/limits/",
+        "/ru/calculus/differentiation/",
+        "/ru/calculus/differentiation/extremes",
+        "/ru/calculus/integration/",
+        "/ru/calculus/integration/parts"
       ]
     },
     {

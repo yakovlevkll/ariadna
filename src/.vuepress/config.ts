@@ -1,9 +1,11 @@
-const { description } = require('../../package')
-const containers = require("./components/containers.js");
-const sidebarEn = require("./sidebars/en.json");
-const sidebarRu = require("./sidebars/ru.json");
-// const katex = require('@iktakahiro/markdown-it-katex')
 import katex from '@iktakahiro/markdown-it-katex'
+
+const { description } = require('../../package')
+
+const containers = require("./components/containers.js");
+
+import sidebarRu from './sidebars/ru'
+import sidebarEn from './sidebars/en'
 
 import {defineConfig} from 'vuepress/config'
 

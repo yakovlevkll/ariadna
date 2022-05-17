@@ -1,4 +1,4 @@
-{
+export default {
   "/en/handbooks/": [
     {
       "title": "Common",
