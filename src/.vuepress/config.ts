@@ -8,14 +8,10 @@ import katex from '@iktakahiro/markdown-it-katex'
 import {defineConfig} from 'vuepress/config'
 
 export default defineConfig({
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
   title: 'Ariadna',
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
   description: description,
+
+  base: '/ariadna/',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
