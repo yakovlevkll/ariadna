@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/woman.webp
 heroText: Ariadna
-tagline: What real education should be
+tagline: Best educational materials in one place
 actionText: Get Started →
 actionLink: /en/home/
 features:

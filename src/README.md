@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/woman.webp
 heroText: Ариадна
-tagline: Собирая лучшее
+tagline: Лучшие учебные материалы в одном месте
 actionText: Начать →
 actionLink: /ru/home/
 features:
