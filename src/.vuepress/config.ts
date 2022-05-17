@@ -13,11 +13,21 @@ export default defineConfig({
 
   base: '/ariadna/',
 
-  /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
+  locales: {
+    // The key is the path for the locale to be nested under.
+    // As a special case, the default locale can use '/' as its path.
+    "/": {
+      lang: "ru-RU", // this will be set as the lang attribute on <html>
+      title: "Ариадна",
+      description: "Лучшие учебные материалы в одном месте"
+    },
+    "/en/": {
+      lang: "en-US",
+      title: "Ariadna",
+      description: "Best educational materials in one place"
+    }
+  },
+
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -42,38 +52,36 @@ export default defineConfig({
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
-    ],
 
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    locales: {
+
+      "/": {
+        selectText: "Языки",
+        label: "🇷🇺 Русский",
+        editLinkText: "Редактировать страницу на GitHub",
+        nav: [{ text: "Справочники", link: "/ru/handbooks/" }],
+        algolia: {},
+        sidebar: sidebarRu
+      },
+      "/en/": {
+        // text for the language dropdown
+        selectText: "Languages",
+        // label for this locale in the language dropdown
+        label: "🇺🇸 English",
+        // text for the edit-on-github link
+        editLinkText: "Edit this page on GitHub",
+
+        // algolia docsearch options for current locale
+        algolia: {},
+        nav: [{ text: "Handbooks", link: "/en/handbooks/" }],
+        sidebar: sidebarEn
+      },
+    },
+
   },
 
   /**
