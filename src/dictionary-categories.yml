@@ -1,0 +1,5 @@
+rational_numbers:
+  ru: рациональные числа
+  keys:
+    - prime_number
+    - coprime_number

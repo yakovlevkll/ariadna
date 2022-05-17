@@ -1,0 +1,42 @@
+infinite_decimal:
+  ru: бесконечная дробь
+repeating_decimal:
+  ru: периодическая дробь
+repetend:
+  ru: период
+integer:
+  ru: целое число
+even:
+  ru: чётный
+odd:
+  ru: нечётный
+factorization:
+  ru: факторизация
+composite:
+  ru: составное
+gcf:
+  ru: больший общий делитель
+factor:
+  ru: множитель
+multiple:
+  ru: кратное
+prime_number:
+  ru: простое число
+coprime_numbers:
+  ru: взаимно простые числа
+rational:
+  ru: рациональный
+divisibility:
+  ru: делимость
+fraction:
+  ru: обыкновенная дробь
+decimal:
+  ru: десятичная дробь
+reciprocal:
+  ru: взаимно обратное число
+cancel_out:
+  ru: сокращение
+square_root:
+  ru: квадратный корень
+exponent:
+  ru: показатель степени

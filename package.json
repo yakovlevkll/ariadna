@@ -1,0 +1,23 @@
+{
+  "name": "ariadna",
+  "version": "0.0.1",
+  "description": "Free educational system",
+  "main": "index.js",
+  "authors": {
+    "name": "Yakovlev Kirill",
+    "email": "yakovlev.kll@gmail.com"
+  },
+  "repository": "/ariadna",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3",
+    "vuepress-plugin-container": "^2.1.5"
+  },
+  "dependencies": {
+    "mermaid": "^9.1.1"
+  }
+}
