@@ -1,70 +1,300 @@
-// index.styl
+/* IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+/* MIXINS */
+
+scrollbar($topMargin = 0.2rem, $bottomMargin = 0.2rem)
+    $scrollbarWidth = 0.6rem
+
+    scrollbar-color rgba(255, 255, 255, 0.1) darken($bgrColor, 5%)
+
+    &::-webkit-scrollbar 
+        width $scrollbarWidth
+        &::hover
+            transform: scale(110%)
+    
+    
+    &::-webkit-scrollbar-track 
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3)
+        background-color $bgrColor
+        border-radius 0.3rem
+        border solid 0px
+        margin-top $topMargin
+        margin-bottom $bottomMargin
+    
+    
+    &::-webkit-scrollbar-thumb 
+        background-color: rgba(255, 255, 255, 0.1)
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
+        border-radius 0.25rem
+        outline 1px solid darken($bgrColor, 5%)
+
+        border: 0.1rem solid transparent;
+        background-clip: content-box;
+
+
+/* MAIN */
+html
+    background-color $bgrColor
+
+body
+    background none
+    scrollbar(0.2rem + $navbarHeight)
+
+div
+    scrollbar()
+
+::selection
+    background rgba(255,255,255, 0.1)
+
+div.links
+    background none !important
+
+.navbar
+    background-color lighten($bgrColor, 3%)
+    box-shadow 0 0px 3px rgba(0,0,0,0.2) !important
+    
+.sidebar
+    font-size 1rem
+    background-color darken($bgrColor, 8%)
+    box-shadow inset 3px 0 10px rgba(0,0,0,0.3) !important
+    scrollbar()
+    &-sub-header
+        font-size 0.8rem
+
+    &-heading .arrow
+        left 0.3em !important
+
+
+
+.table-of-contents
+    color $accentColor
+    a
+        color saturation($accentColor, 70%)
+
+.theme-default-content
+    z-index 100
+
+// .go-to-top
+//     width 1.5rem  !important
+//     bottom 1.5rem  !important
+//     right 1rem  !important
+
+
+
+.search-box input 
+    background-color rgba(255, 255, 255, 0.07) !important
+    box-shadow inset 0px 0px 4px rgba(0,0,0,0.6) !important
+    border none !important
+    &:focus
+        background-color rgba(255, 255, 255, 0.12) !important
+        box-shadow inset 0px 0px 4px rgba(0,0,0,0.5) !important
+        border none !important
+
+/* CODE BLOCKS */
+pre
+    scrollbar()
+
+.line-numbers-wrapper
+    width 2rem !important
+
+.line-numbers-mode::after
+        width 2rem !important
+
+div[class*="language-"].line-numbers-mode pre
+    padding-left 3rem !important
+
+code
+    background $codeBgColor !important
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5
+    color $accentColor
+    font-weight 400 !important
+h2
+    border-color alpha(saturation($accentColor, 40%), 0.3)
+h4
+    font-size 1.15rem
+h5
+    font-size 1.08rem
+
 .MathJax
     font-size 1.25rem
 
-.theorem
-    margin 1rem 0
-    padding .1rem 1.5rem
-    border-radius 0.4rem
-    background-color #f0f4f8
-    .title
-        font-weight bold
+ul, ol
+    margin-left 1rem
 
-.custom-block
-    &.right
-        color transparentify($textColor, 0.4)
-        font-size 0.9rem
-        text-align right
+// Fluid font
+html {
+    font-size: 18px  !important;
+  }
 
-.todo 
-    padding 0.05rem 1.25rem
-    margin 0.5rem 0
-    color #856404
-    background-color #fff3cd8c
-    font-weight bold
-    border-radius 0.05rem
-    border 0.1rem solid #ffeeba
-    border-left 0.3rem solid rgba(236, 202, 109, 0.719)
+body
+    font-size inherit !important
 
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680)) !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px  !important;
+  }
+}
+
+
+/* IMAGES */
+p
+    img
+        display block
+        max-height 60vh
+        margin 3rem auto
+
+
+    [src*='#left']
+        float left
+
+    [src*='#right']
+        float right
+
+    [src*='#center']
+        display block
+        margin auto
+
+/* MERMAID */
+
+rect .label-container
+    fill alpha($accentColor, 0.2) !important
+    stroke alpha($accentColor, 0.8) !important
+
+/* HERO */
+.home .hero
+    height calc(100vh - 3.6rem)
+    display flex
+    flex-direction column
+    justify-content center
+
+    img
+        background url('/img/woman-bgr.svg')
+        height 18rem !important
+        max-height 40% !important
+
+    h1
+        font-size 3.5rem !important
+        text-transform uppercase
+        font-family Raleway, sans-serif !important
+        font-weight 400 !important
+        margin-bottom 0.3rem !important
+        letter-spacing 0.3rem
+
+    .description
+        margin-top 0.3rem !important
+        font-size 1.3rem !important
+
+    .action-button
+        color $bgrColor !important
+
+div .features
+    margin-top 0 !important
+
+
+.site-name
+    color $accentLightenColor !important
+    text-transform uppercase
+    font-family Raleway, sans-serif !important
+    font-weight 300 !important
+    letter-spacing 0.2rem
+
+.reading-progress
+    .progress
+        background $accentLightenColor !important
+
+/* TABLES */
+
+table
+    scrollbar()
+
+    thead
+        background-color alpha($accentColor, 0.4)
+        border none
+        tr
+            border none
+        th
+            border solid 1px alpha($accentColor, 0.5)
+
+    tbody
+
+        tr:nth-child(2n)
+            background-color alpha($textColor, 0.08)
+
+        td
+            border-color darken($textColor, 60%)
+
+
+
+
+
+/* BLOCK */
 .block
-    margin 2rem 0
-    overflow hidden
-    border-radius 0.35rem
+    margin 2.4rem 0
+    padding 2rem 2rem 1rem 2rem
+    background rgba(255, 255, 255, 0.05)
+    box-shadow 0rem 0rem 0.3rem rgba(0,0,0,0.3)
 
-    &-title
-        margin 1rem 1.25rem
+    .title
+        padding-bottom 0.5rem
 
-        font-size 1rem
+        font-size 1.18rem
         font-weight bold
 
-    &-contents
-        margin 0rem 1.25rem
+    .author
+        text-align right 
+        margin 0 0.5rem 0.5rem 0
 
+        font-size 1.1rem
+        font-weight bold
+        color $textColor
 
-.nb
-    &-block
-        background #4dd89920
-        border-color #4dd89931
-    &-title
-        color #4dd899
-
-.task
-    &-block
-        background #4db8d820
-        border-color #4db8d832
-    &-title
-        color #4db8d8
 
 .example
-    &-block
-        background #d89c4d20
-        border-color #d8974d32
-    &-title
-        color #e98121
+    .title
+        color $green
 
-.quest
-    &-block
-        background #9735FF20
-        border-color #d8974d32
-    &-title
-        color #9735FF
+.footnote
+    background alpha($brownGrey, 22%)
+    opacity 0.5
+    color lighten(saturate($brownGrey, 40%), 40%)
+
+.nb
+    .title
+        color $yellow
+
+
+.principle
+    // background alpha($cyan, 0.1)
+    .title
+        color $pink
+
+
+.quote
+    padding-top 0.5rem
+    p
+        font-size 1.3rem
+        font-weight 400
+        font-family 'Roboto Slab', Georgia, 'Times New Roman', Times, serif
+
+.quiz
+    .title
+        color $purple
+
+.tasks
+    .title
+        color $blue
+
+.todo
+    background alpha($pink, 20%)
+    opacity 0.6
+    color lighten(saturate($pink, 40%), 20%)
+
